@@ -1,0 +1,61 @@
+{% if yandexmetrika.counter_number is not empty %}
+  {% if yandexmetrika.async_code == true%}
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function(d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+        try {
+          w.yaCounter{{ yandexmetrika.counter_number }} = new Ya.Metrika({
+          id : {{ yandexmetrika.counter_number }},
+          webvisor : {{ yandexmetrika.webvisor ? 'true' : 'false' }},
+          clickmap : {{ yandexmetrika.click_map ? 'true' : 'false' }},
+          trackLinks : {{ yandexmetrika.track_links ? 'true' : 'false' }},
+          accurateTrackBounce : {{ yandexmetrika.accurate_track_bounce ? 'true' : 'false' }},
+          trackHash : {{ yandexmetrika.track_hash ? 'true' : 'false' }}{{ yandexmetrika.stop_index ? ', ut : "noindex"' : '' }}
+          });
+        } catch(e) {
+        }
+        });
+      
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function() {
+        n.parentNode.insertBefore(s, n);
+        };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+      
+        if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+        } else {
+        f();
+        }
+      })(document, window, "yandex_metrika_callbacks"); 
+    </script>
+    <noscript>
+    <div><img src="//mc.yandex.ru/watch/{{ yandexmetrika.counter_number }}{{ yandexmetrika.stop_index ? '?ut=noindex' : '' }}" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  {% else %}
+    <!-- Yandex.Metrika counter -->
+    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    try {
+      var yaCounter{{ yandexmetrika.counter_number }} = new Ya.Metrika({
+      id : {{ yandexmetrika.counter_number }},
+      webvisor : {{ yandexmetrika.webvisor ? 'true' : 'false' }},
+      clickmap : {{ yandexmetrika.click_map ? 'true' : 'false' }},
+      trackLinks : {{ yandexmetrika.track_links ? 'true' : 'false' }},
+      accurateTrackBounce : {{ yandexmetrika.accurate_track_bounce ? 'true' : 'false' }},
+      trackHash : {{ yandexmetrika.track_hash ? 'true' : 'false' }}{{ yandexmetrika.stop_index ? ', ut : "noindex"' : '' }}
+      });
+    } catch(e) {
+    }
+    </script>
+    <noscript>
+    <div><img src="//mc.yandex.ru/watch/{{ yandexmetrika.counter_number }}{{ yandexmetrika.stop_index ? '?ut=noindex' : '' }}" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+  {% endif %}
+{% endif %}

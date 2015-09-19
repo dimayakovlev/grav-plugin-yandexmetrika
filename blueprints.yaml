@@ -1,0 +1,123 @@
+name: Yandex.Metrika
+version: 1.0.0
+description: "This plugin adds Yandex.Metrika code into website."
+icon: bullseye
+author:
+  name: Dmitry Yakovlev
+  email: dmiyak@mail.ru
+  url: http://dimayakovlev.ru
+homepage: http://dimayakovlev.ru
+keywords: yandex, metrika, plugin, statistics
+bugs: http://dimayakovlev.ru
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+        
+    yandex_metrika_code_settings:
+      type: section
+      title: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.SETTINGS_HEADER
+      underline: false
+
+    counter_number:
+      type: number
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.COUNTER_NUMBER
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.COUNTER_NUMBER_HELP
+      size: medium
+      validate:
+        type: number
+        required: true
+
+    webvisor:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.WEBVISOR
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.WEBVISOR_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    click_map:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.CLICK_MAP
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.CLICK_MAP_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    track_links:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.TRACK_LINKS
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.TRACK_LINKS_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    accurate_track_bounce:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.ACCURATE_TRACK_BOUNCE
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.ACCURATE_TRACK_BOUNCE_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+
+    track_hash:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.TRACK_HASH
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.TRACK_HASH_HELP
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+        
+    async_code:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.ASYNC_CODE
+      help: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.ASYNC_CODE_HELP
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+        
+    stop_index:
+      type: toggle
+      label: PLUGIN_YANDEXMETRIKA.BLUEPRINTS.STOP_INDEX
+      highlight: 1
+      default: 1
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool

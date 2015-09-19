@@ -1,0 +1,9 @@
+enabled: false
+counter_number: 
+webvisor: true
+click_map: true
+track_links: true
+accurate_track_bounce: true
+track_hash: false
+async_code: false
+stop_index: false

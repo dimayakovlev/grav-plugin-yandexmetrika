@@ -1,0 +1,41 @@
+en:
+  PLUGIN_YANDEXMETRIKA:
+    BLUEPRINTS:
+      DESCRIPTION: This plugin adds Yandex.Metrika code to your website
+      STATUS: Plugin status
+      SETTINGS_HEADER: Setting the counter
+      COUNTER_NUMBER: Counter number
+      COUNTER_NUMBER_HELP: Enter the number of your counter obtained from Yandex.Metrika
+      WEBVISOR: Webvisor
+      WEBVISOR_HELP: Recording and analysis of site user behavior
+      CLICK_MAP: Click map
+      CLICK_MAP_HELP: Statistics used to create the "Click map" report
+      TRACK_LINKS: External links, file downloads and "Share" button report
+      TRACK_LINKS_HELP: Statistics for links to external resources, file downloads and "Share" buttons
+      ACCURATE_TRACK_BOUNCE: Accurate bounce rate
+      ACCURATE_TRACK_BOUNCE_HELP: Any visit where a user only views one page and spends less than 15 seconds on it will be counted as a bounce
+      TRACK_HASH: Hash tracking in the browser address window
+      TRACK_HASH_HELP: Option applied to AJAX sites
+      ASYNC_CODE: Asynchronous code
+      ASYNC_CODE_HELP: Asynchronous code does not block or influence the loading speed of your site
+      STOP_INDEX: Stop automatic page indexing
+      
+ru:
+  PLUGIN_YANDEXMETRIKA:
+    BLUEPRINTS:
+      DESCRIPTION: Плагин добавляет код Yandex.Metrika на ваш веб-сайт
+      STATUS: Состояние плагина
+      SETTINGS_HEADER: Настройка параметров счётчика
+      COUNTER_NUMBER: Номер счётчика
+      COUNTER_NUMBER_HELP: Укажите номер счётчика, полученный при регистрации в системе Yandex.Metrika
+      WEBVISOR: Вебвизор
+      WEBVISOR_HELP: Запись и анализ поведения посетителей сайта
+      TRACK_LINKS: Внешние ссылки, загрузка файлов и отчет по кнопке "Поделиться"
+      TRACK_LINKS_HELP: Сбор статистики для отчетов по ссылкам на внешние ресурсы и загрузкам файлов
+      ACCURATE_TRACK_BOUNCE: Точный показатель отказов
+      ACCURATE_TRACK_BOUNCE_HELP: При включении этой опции отказом будет считаться визит с просмотром одной страницы продолжительностью менее 15 секунд, при отключении — визит с просмотром одной страницы
+      TRACK_HASH: Отслеживание хеша в адресной строке
+      TRACK_HASH_HELP: Данная опция применяется для AJAX-сайтов, и позволяет корректно подсчитывать количество просмотров на страницах, которые обновляются без перезагрузки
+      ASYNC_CODE: Асинхронный код
+      ASYNC_CODE_HELP: Не влияет на скорость загрузки страниц вашего сайта
+      STOP_INDEX: Запрет отправки страниц на индексацию
