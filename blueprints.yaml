@@ -1,14 +1,14 @@
 name: Yandex.Metrika
 version: 1.0.0
-description: "This plugin adds Yandex.Metrika code into website."
+description: "This plugin adds Yandex.Metrika code into website"
 icon: bullseye
 author:
   name: Dmitry Yakovlev
   email: dmiyak@mail.ru
   url: http://dimayakovlev.ru
-homepage: http://dimayakovlev.ru
+homepage: https://github.com/dimayakovlev/grav-plugin-yandexmetrika
 keywords: yandex, metrika, plugin, statistics
-bugs: http://dimayakovlev.ru
+bugs: https://github.com/dimayakovlev/grav-plugin-yandexmetrika/issues
 license: MIT
 
 form:
